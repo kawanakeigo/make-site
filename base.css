@@ -45,7 +45,7 @@ nav input[type="text"] {
   flex-shrink: 0;
   width: 50vw;
   height: auto;
-  margin: 0; 
+  margin: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -200,9 +200,10 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  header{
+  header {
     background-color: gray;
   }
+
   .hamburger {
     display: block;
     font-size: 28px;
@@ -213,12 +214,13 @@ footer {
     color: #333;
     z-index: 9999;
   }
+
   nav#nav-menu {
     display: none;
     flex-direction: column;
-    background-color: gray; 
+    background-color: gray;
     position: absolute;
-    top: 100px; 
+    top: 100px;
     left: 0;
     width: 100%;
     padding: 10px 0;
@@ -236,33 +238,16 @@ footer {
     width: 100%;
   }
 
-
-
-
-
-
-    .feature-content {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .feature-content img {
-      width: 100%;
-    }
-
-    .branches {
-      display: none;
-    }
+  .feature-content {
+    flex-direction: column;
+    text-align: center;
   }
 
- 
+  .feature-content img {
+    width: 100%;
+  }
 
- 
-
-  
-
-
-
-
-
-
+  .branches {
+    display: none;
+  }
+}
