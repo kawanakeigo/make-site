@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casteria</title>
+  <link rel="stylesheet" href="base.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <h1>Casteria</h1>
+    <button class="hamburger" id="hamburger">☰</button>
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Food</a></li>
+        <li><a href="#">Drink</a></li>
+        <li><a href="#">お問合せ</a></li>
+        <li><input type="text" placeholder="Search"><button>Search</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="slider">
+    <div class="slide-track">
+      <img src="img/Barista.jpg" class="slide" alt="Coffee">
+      <img src="img/food.jpg" class="slide" alt="Salmon">
+      <img src="img/food2.jpg" class="slide" alt="Pasta">
+      <img src="img/interior.jpg" class="slide" alt="Interior">
+      <img src="img/restaurant.jpg" class="slide" alt="Restaurant">
+    </div>
+    <button class="prev">‹</button>
+    <button class="next">›</button>
+  </section>
+
+
+  <main>
+    <section class="notice">
+      <h2>新型コロナウイルスに対する取り組みの最新情報をご案内</h2>
+
+      <div class="box">
+        <h3 id="clickable1">■ 衛生面に関して</h3>
+      </div>
+      <div id="toggle-text1">
+        <ul>
+          <li>マスクを着用しての接客</li>
+          <li>出勤前の検温の徹底</li>
+          <li>レジカウンターやドリンク受け渡し口等への飛沫防止ガードの設置</li>
+          <!-- 他の項目も必要に応じて追加 -->
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3 id="clickable2">■ お客様へのご協力のお願い</h3>
+      </div>
+      <div id="toggle-text2">
+        <ul>
+          <li>店内では、飲食時以外のマスク着用をお願いします</li>
+          <li>入店時の手指の消毒にご協力ください</li>
+
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3 id="clickable3">■ サービスに関して</h3>
+      </div>
+      <div id="toggle-text3">
+        <ul>
+          <li>直接お渡しする商品、食器類等はグローブの着用</li>
+          <li>ドリンクやフードのサンプルリング中止</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="feature">
+      <div class="box1">
+        <h2>Signature Food</h2>
+        <div class="feature-content">
+          <img src="img/food.jpg" alt="Signature Food">
+          <p>サーモンは刺身やカルパッチョでも食べられる</p>
+        </div>
+      </div>
+      <div class="box2">
+        <h2>Our Coffee</h2>
+        <div class="feature-content">
+          <img src="img/barista.jpg" alt="Coffee">
+          <p>当店のコーヒー豆が厳選されて世界中から買い付け</p>
+        </div>
+      </div>
+      <div class="box3">
+        <h2>Our Food</h2>
+        <div class="feature-content">
+          <img src="img/food3.jpg" alt="Food">
+          <p>当店は何よりまずは衛生管理に気をつけています</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="access">
+      <div class="box4">
+        <h2>Address</h2>
+        <div class="feature-content">
+
+          <div class="box4-text">
+            <p>681 xxxx Drive, xxxxx xxxx #01 - 06 000000</p>
+            <p>Opening Hours: Mondays - Fridays: 10am - 9pm</p>
+          </div>
+          <img src="img/Barista.jpg">
+        </div>
+
+
+      </div>
+    </section>
+
+    <section class="branches">
+      <h2>店舗一覧</h2>
+      <div class="branch-list">
+        <div class="area1">
+          <img src="img/restaurant.jpg" alt="レストランと１" class="circle-image">
+          <div class="branch">東京都渋谷区xxxx xxxx</div>
+        </div>
+        <div class="area2">
+          <img src="img/restaurant2.jpg" alt="レストランと２" class="circle-image">
+          <div class="branch">千葉県松戸市xxxx xxxx</div>
+        </div>
+        <div class="area3">
+          <img src="img/restaurant3.jpg" alt="レストランと3" class="circle-image">
+          <div class="branch">神奈川県横浜市xxxx xxxx</div>
+        </div>
+        <div class="area4">
+          <img src="img/restaurant4.jpg" alt="レストランと4" class="circle-image">
+          <div class="branch">埼玉県川越市xxxx xxxx</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>プライバシーポリシー　｜　お問合せ　｜　運営会社</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
