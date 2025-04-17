@@ -13,6 +13,10 @@ header {
   align-items: center;
 }
 
+.hamburger {
+  display: none;
+}
+
 nav ul {
   list-style: none;
   display: flex;
@@ -40,8 +44,15 @@ nav input[type="text"] {
 .slide {
   flex-shrink: 0;
   width: 50vw;
-  /* 画面幅の半分 */
   height: auto;
+  margin: 0; 
+}
+
+@media screen and (max-width: 768px) {
+  .slide {
+    width: 100vw;
+    margin: 0 auto;
+  }
 }
 
 .slider button {
@@ -187,3 +198,71 @@ footer {
   align-items: center;
   text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+  header{
+    background-color: gray;
+  }
+  .hamburger {
+    display: block;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    color: #333;
+    z-index: 9999;
+  }
+  nav#nav-menu {
+    display: none;
+    flex-direction: column;
+    background-color: gray; 
+    position: absolute;
+    top: 100px; 
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 999;
+  }
+
+  nav#nav-menu ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+
+  nav#nav-menu li {
+    width: 100%;
+  }
+
+
+
+
+
+
+    .feature-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .feature-content img {
+      width: 100%;
+    }
+
+    .branches {
+      display: none;
+    }
+  }
+
+ 
+
+ 
+
+  
+
+
+
+
+
+

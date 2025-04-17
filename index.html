@@ -13,7 +13,8 @@
 
   <header>
     <h1>Casteria</h1>
-    <nav>
+    <button class="hamburger" id="hamburger">☰</button>
+    <nav id="nav-menu">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Food</a></li>
@@ -144,6 +145,13 @@
 
   <script>
     $(document).ready(function () {
+  $('#hamburger').click(function () {
+    $('#nav-menu').slideToggle();
+  });
+});
+
+
+    $(document).ready(function () {
       const $track = $('.slide-track');
       const $slides = $('.slide');
       const slideWidth = $('.slide').outerWidth(true);
@@ -224,6 +232,8 @@
         });
       });
     });
+
+
 
 
 
